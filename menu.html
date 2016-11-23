@@ -3,14 +3,15 @@
 <meta charset="utf-8">
 <head>
 	<title>MaejiReview</title>
-	<link rel="stylesheet" type="text/css" href="css/category.css"/>
+	<link rel="stylesheet" type="text/css" href="css/menu.css"/>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 </head>
 
 <body background="background.jpg">
 <div style="text-align: center; margin-top: 00">
 	<h1>매지리뷰</h1>	
 </div>
-<div style="margin-top: 400; padding: 400">
+<div class="container" style="margin-top: 400; padding: 400">
 
 <table style="width: 60%; height: 80%; margin: auto;
 		background-color: #ffe5b2; opacity: 0.7">
@@ -28,22 +29,21 @@
 
 <tbody>
 	<tr>
-		<td align="center"> 음식 </td>
-		<td align="center"> 6000원 </td>
-		<td align="center" onclick="location.href=myModal;"> 리뷰 남기기 </td>
+		<td> 음식 </td>
+		<td> 6000원 </td>
+		<td style="cursor: pointer;" data-toggle="modal" data-target="#myModal" > 리뷰 남기기 </td>
 	</tr>
 </tbody>
 </table>
-	
-</div>
 
+<div class="container">
     <!-- 모달 팝업 -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        <h4 class="modal-title" id="myModalLabel"> 리뷰 보기</h4>
           </div>
           <div class="modal-body">
         ...
@@ -63,6 +63,7 @@
 <script src="http://googledrive.com/host/0B-QKv6rUoIcGREtrRTljTlQ3OTg"></script><!-- ie10-viewport-bug-workaround.js -->
 <script src="http://googledrive.com/host/0B-QKv6rUoIcGeHd6VV9JczlHUjg"></script><!-- holder.js -->
 
+</div>
 
 </body>
 </html
